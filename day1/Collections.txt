@@ -1,0 +1,62 @@
+List- ArrayList, LinkedList, Stack= Vector
+	-ordered list
+	-order of element is maintained
+	-allows data redundancy(data duplication)
+
+Queue- PriorityQueue, Deque, ArrayDeque, (I)Deque= ArrayDeque
+	-FIFO
+	-maintains order
+	-insertion and deletion form single end
+	-Deque- double-ended queue
+		-insertion and deletion from both ends
+
+Set- HashSet, LinkedHashSet, (I)SortedSet=TreeSet
+	-unordered group of objects
+	-does not allows data redundancy
+	-SortedSet- TreeSet
+		- has additional methods for sorting set.
+
+Map- HashMap, LinkedHashMap, SortedMap=TreeMap
+
+
+----------------------------------------------------------------
+
+LinkedList VS ArrayList
+
+ArrayList- Objects stored in contagious memory location
+	-Accessing objects is easy as it maintains order
+	-Insertion and deletion is difficult as needs shifting
+
+LinkedList- Objects stored in nodes
+	-Nodes has 2 parts that contains: Object and reference of next node
+	-As java does not support pointers, we use references to link the nodes
+
+******************************************************
+class ListNode {
+    int data;
+    ListNode next;
+
+    public ListNode(int data) {
+        this.data = data;
+        this.next = null;
+    }
+}
+
+ListNode node1 = new ListNode(1);
+ListNode node2 = new ListNode(2);
+ListNode node3 = new ListNode(3);
+ 
+node1.next = node2; // node1 points to node2
+node2.next = node3; // node2 points to node3
+
+// The linked list: 1 -> 2 -> 3
+
+********************************************************
+
+Default port number
+
+Gateway: 7777
+Eureka: 8761
+microservice: 8080
+Angular: 4200
+MongoDB: 27017
